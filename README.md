@@ -21,3 +21,14 @@ $ make pytest ARGS=<your_args>
 ```
 
 For example, to run tests from a specific folder run `make pytest ARGS=./tests`
+
+### VS Code Settings
+
+The suggested VS Code settings are as follows:
+
+```
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+}
+```
