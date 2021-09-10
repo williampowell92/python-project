@@ -1,7 +1,7 @@
 .PHONY: test pytest
 
 init:
-	virtualenv .env && source .env/bin/activate && pip install -r requirements.txt
+	virtualenv .venv && source .venv/bin/activate && pip install -r requirements.txt
 
 # Used to run a subset of the tests, e.g. `make pytest PATH=tests/subfolder`
 pytest:
