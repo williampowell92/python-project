@@ -1,3 +1,5 @@
+.PHONY: test pytest
+
 init:
 	virtualenv .env && source .env/bin/activate && pip install -r requirements.txt
 
@@ -6,5 +8,7 @@ pytest:
 	python3 -m pytest $(ARGS)
 
 test:
-	python3 -m pytest ./tests
+	python3 -m pytest ./test
 
+lint:
+	python3 -m pylint ./**/*.py
