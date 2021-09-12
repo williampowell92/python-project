@@ -1,4 +1,4 @@
-from dynaconf import settings
+from config.config import settings
 
 
 class HelloWorld:
